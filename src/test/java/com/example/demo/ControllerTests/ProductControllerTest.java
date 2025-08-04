@@ -80,7 +80,7 @@ public class ProductControllerTest {
     
     mockmvc.perform(get("/api/products/category/{category}", category))   
             .andExpect(status().isNotFound())
-            .andExpect(jsonPath("$.message").value("No products with sufficient inventory"))
+            .andExpect(jsonPath("$.message").value("No products with sufficient inventory."))
             .andExpect(jsonPath("$.statusCode").value(HttpStatus.NOT_FOUND.value()))   
             .andExpect(jsonPath("$.traceId").isNotEmpty());
 	           
