@@ -89,8 +89,7 @@
 			<scope>test</scope>
 		</dependency>
 	
-</dependencies>
-	<dependencies>
+
     <!-- JUnit 4 -->
     <dependency>
         <groupId>junit</groupId>
